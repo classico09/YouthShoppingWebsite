@@ -31,7 +31,7 @@
 							placeholder="Enter Product Price" required>
 					</div>
 					<div class="form-group">
-						<label>Product Image</label> <input type="text"
+						<label>Product Image</label> <input type="file"
 							class="form-control" name="product-image"
 							placeholder="Enter Your Password" required>
 					</div>

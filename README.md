@@ -9,3 +9,6 @@ Before running the website, your Eclipse should add libraby in the build path of
 You should run on tomcat 10.0.23.
 
 The error of the file navbar you see is no matter when you run the project.
+
+All the image should put in the folder src/main/webapp/images/
+

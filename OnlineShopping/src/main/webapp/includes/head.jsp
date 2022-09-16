@@ -7,10 +7,6 @@
 	rel="stylesheet"
 	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 	crossorigin="anonymous" />
-<header class="bg-info py-5">
-	<div class="container px-4 px-lg-5 my-5">
-		<div class="text-center text-white">
-			<h1 class="display-4 fw-bolder">YOUTH SHOP</h1>
-		</div>
-	</div>
+<header class="bg-light">
+	<img class="card-img-top" src="images/home.jpg" alt="home" />
 </header>

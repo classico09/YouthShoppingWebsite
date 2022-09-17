@@ -30,21 +30,28 @@ public class RegisterServlet extends HttpServlet {
 			String email = request.getParameter("register-email");
 			String pass = request.getParameter("register-password");
 			String phone = request.getParameter("register-phone");
+			String repass = request.getParameter("register-repassword");
 			
-			try {
-				UserDao udao = new UserDao(DBCon.getConnection());
-				boolean flag = udao.userRegister(name, email, pass, phone);
+			if(repass == pass) {
+				try {
+					UserDao udao = new UserDao(DBCon.getConnection());
+					boolean flag = udao.userRegister(name, email, pass, phone);
 
-				if(flag == true) {
-					out.println("<h3 style='color:crimson; text-align:center'>Register Successful.<a href='login.jsp'>Go to Login Page </a>");
-				}else {
-					response.sendRedirect("register.jsp");
+					if(flag == true) {
+						out.println("<h3 style='color:crimson; text-align:center'>Register Successful.<a href='login.jsp'>Go to Login Page </a>");
+					}else {
+						response.sendRedirect("register.jsp");
+					}
+					
+				} catch (ClassNotFoundException | SQLException e) {
+					e.printStackTrace();
 				}
-				
-			} catch (ClassNotFoundException | SQLException e) {
-				e.printStackTrace();
+			}else {
+				out.println("<h3 style='color:crimson; text-align:center'>Password and Re-Password are not correct.<a href='register.jsp'>Return to Register Page</a>");
 			}
 		}
+			
+			
 	}
 
 }

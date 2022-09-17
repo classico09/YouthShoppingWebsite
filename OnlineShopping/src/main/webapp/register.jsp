@@ -26,7 +26,7 @@
 							required>
 					</div>
 					<div class="form-group">
-						<label>Email Address</label> <input type="email"
+						<label>Email Address</label> <input type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
 							class="form-control" name="register-email"
 							placeholder="Enter Your Email" required>
 					</div>

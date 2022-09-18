@@ -26,7 +26,7 @@
 							required>
 					</div>
 					<div class="form-group">
-						<label>Email Address</label> <input type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+						<label>Email Address</label> <input type="email"
 							class="form-control" name="register-email"
 							placeholder="Enter Your Email" required>
 					</div>
@@ -36,7 +36,7 @@
 							placeholder="Enter Your Password" required>
 					</div>
 					<div class="form-group">
-						<label>Retype Password</label> <input type="password"
+						<label>Re Password</label> <input type="password"
 							class="form-control" name="register-repassword"
 							placeholder="Enter Your Password Again" required>
 					</div>

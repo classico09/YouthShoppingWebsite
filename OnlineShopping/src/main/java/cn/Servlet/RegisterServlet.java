@@ -5,7 +5,6 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import cn.Connection.DBCon;
-import cn.Controller.User;
 import cn.Dao.UserDao;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -32,22 +31,18 @@ public class RegisterServlet extends HttpServlet {
 			String phone = request.getParameter("register-phone");
 			String repass = request.getParameter("register-repassword");
 			
-			if(repass == pass) {
-				try {
-					UserDao udao = new UserDao(DBCon.getConnection());
-					boolean flag = udao.userRegister(name, email, pass, phone);
+			try {
+				UserDao udao = new UserDao(DBCon.getConnection());
+				boolean flag = udao.userRegister(name, email, pass, phone);
 
-					if(flag == true) {
-						out.println("<h3 style='color:crimson; text-align:center'>Register Successful.<a href='login.jsp'>Go to Login Page </a>");
-					}else {
-						response.sendRedirect("register.jsp");
-					}
-					
-				} catch (ClassNotFoundException | SQLException e) {
-					e.printStackTrace();
+				if(flag == true) {
+					out.println("<h3 style='color:crimson; text-align:center'>Register Successful.<a href='login.jsp'>Go to Login Page </a>");
+				}else {
+					response.sendRedirect("register.jsp");
 				}
-			}else {
-				out.println("<h3 style='color:crimson; text-align:center'>Password and Re-Password are not correct.<a href='register.jsp'>Return to Register Page</a>");
+				
+			} catch (ClassNotFoundException | SQLException e) {
+				e.printStackTrace();
 			}
 		}			
 	}

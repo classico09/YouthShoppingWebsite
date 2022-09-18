@@ -11,5 +11,6 @@
 		<welcome-file>orders.jsp</welcome-file>
 		<welcome-file>cart.jsp</welcome-file>
 		<welcome-file>register.jsp</welcome-file>
+		<welcome-file>about.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>

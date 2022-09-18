@@ -42,7 +42,7 @@ public class UserDao {
 	}
 	//register
 	public boolean userRegister(String name, String email, String pass, String phone) {
-		User user = null;
+
 		boolean flag = false;
 		try {
 			query = "insert into Account(Email, FullName, Password, Mobile) values(?, ?, ?, ?)";

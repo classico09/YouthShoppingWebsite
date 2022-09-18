@@ -49,9 +49,7 @@ public class RegisterServlet extends HttpServlet {
 			}else {
 				out.println("<h3 style='color:crimson; text-align:center'>Password and Re-Password are not correct.<a href='register.jsp'>Return to Register Page</a>");
 			}
-		}
-			
-			
+		}			
 	}
 
 }

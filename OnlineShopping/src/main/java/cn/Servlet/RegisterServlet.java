@@ -46,7 +46,7 @@ public class RegisterServlet extends HttpServlet {
 					e.printStackTrace();
 				}
 			}else {
-				out.println("<h3 style='color:crimson; text-align:center'>Register Unsuccessful.<a href='register.jsp'>Go to Register Page </a>");
+				out.println("<h3 style='color:crimson; text-align:center'>Register Unsuccessful.<a href='register.jsp'> Go to Register Page </a>");
 			}
 		}			
 	}

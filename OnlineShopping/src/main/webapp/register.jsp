@@ -43,6 +43,7 @@
 					<div class="form-group">
 						<label>Phone</label> <input type="text" class="form-control"
 							name="register-phone" placeholder="Enter Your Phone number"
+							maxlength="11"
 							required>
 					</div>
 					<div class="text-center">

@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 					request.getSession().setAttribute("auth", user);
 					response.sendRedirect("index.jsp");
 				}else {
-					response.sendRedirect("login.jsp");
+					out.println("<h3 style='color:crimson; text-align:center'>Login fail. Email or Password are not correct. Please try<a href='login.jsp'> again!</a>");
 				}
 				
 			} catch (ClassNotFoundException | SQLException e) {

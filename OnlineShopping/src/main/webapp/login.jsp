@@ -25,7 +25,7 @@
 			<div class="card-body">
 				<form action="user-login" method="post">
 					<div class="form-group">
-						<label>Email Address</label> <input type="email" pattern="/^.!#$%&’*+=?^`{|}~-[]"
+						<label>Email Address</label> <input type="email"
 							class="form-control" name="login-email"
 							placeholder="Enter Your Email" required>
 					</div>

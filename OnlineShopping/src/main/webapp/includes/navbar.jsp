@@ -20,7 +20,7 @@
 				if(auth != null){%>
 					<li class="nav-item"><a class="nav-link" href=""><p class="text-primary">${auth.getName() }</p></a>
 					<%
-					if(auth.getName() != "admin"){%>
+					if(auth.getName().equals("admin")){%>
 						<li class="nav-item"><a class="nav-link" href="product.jsp">Create Product</a>
 					<%}%>
 					<li class="nav-item"><a class="nav-link" href="cart.jsp">Cart<span class="badge bg-dark text-white ms-1 rounded-pill">${cart_list.size()}</span> </a></li>

@@ -25,9 +25,9 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/user0329/eclipse-workspace/YouthShoppingWebsite/library/library/jakarta.servlet-api-5.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/user0329/eclipse-workspace/YouthShoppingWebsite/library/library/javax.servlet-api-4.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/user0329/eclipse-workspace/YouthShoppingWebsite/library/library/mysql-connector-java-8.0.22.jar"/>
-	<classpathentry kind="lib" path="C:/Users/user0329/eclipse-workspace/YouthShoppingWebsite/library/library/tomcat-servlet-api-10.0.23.jar"/>
+	<classpathentry kind="lib" path="D:/YouthShoppingWebsite/library/library/jakarta.servlet-api-5.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/YouthShoppingWebsite/library/library/javax.servlet-api-4.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/YouthShoppingWebsite/library/library/mysql-connector-java-8.0.22.jar"/>
+	<classpathentry kind="lib" path="D:/YouthShoppingWebsite/library/library/tomcat-servlet-api-10.0.23.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
